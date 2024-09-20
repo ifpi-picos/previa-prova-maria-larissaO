@@ -2,7 +2,7 @@ import { describe, it, expect } from "bun:test";
 import {
   maiorNumero,
   verificarParOuImpar,
-  contarCaracter,
+  contarCaracter, 
   atualizarPropriedade,
 } from "./previa.js";
 
@@ -44,7 +44,7 @@ describe("contarCaracter", () => {
 
 // Teste para a função atualizarPropriedade
 describe("atualizarPropriedade", () => {
-  it("deve atualizar uma propriedade existente", () => {
+  it("deve atualizar uma propriedade existente", () => { //it equivale a test
     const objeto = { nome: "João", idade: 25 };
     expect(atualizarPropriedade(objeto, "idade", 30)).toEqual({
       nome: "João",
